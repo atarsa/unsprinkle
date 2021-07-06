@@ -19,10 +19,13 @@ const Hero = () => {
           /images/hero-img@3x.jpg 3x
         "
         />
-        <HeroImage src="/images/hero-img.jpg" />
+        <HeroImage
+          src="/images/hero-img.jpg"
+          alt="Example of the picture that can be distrubuted on this site (cat on the black background)"
+        />
       </picture>
 
-      <Swoop src="/swoop.svg" />
+      <Swoop src="/swoop.svg" alt="" />
     </Wrapper>
   );
 };
@@ -36,7 +39,6 @@ const Wrapper = styled.section`
   align-items: flex-end;
   background: hsl(0deg 0% 1%);
 `;
-
 
 const HeroImage = styled.img`
   display: block;
